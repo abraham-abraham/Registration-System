@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Montserrat", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Do not touch anything above this */
+
+body {
+    background-color: bisque;
+}
+
+.top {
+    padding: 100px;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.main {
+    border: 1px solid black;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.main-register, .main-drop,
+.main-information {
+    width: 500px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0px auto;
+}
+.main-register-title,
+.main-information-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    height: 50px;
+}
+.main-register-info > p {
+    display: flex;
+}
+.main-register-info > p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.main-register-info > p > label {
+    display: inline-block;
+    padding-left: 10px;
+    text-align: left;
+    width: 200px;
+}
+.main-register-info-role > select {
+    width: 125px;
+}
+
+.main-information-course-list-form-submit,
+.main-information-student-list-submit,
+.main-register-info-submit,
+.main-drop-info-submit {
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.main-information-course-list-form-submit:hover,
+.main-information-student-list-submit:hover,
+.main-register-info-submit:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+.main-information-course-list-form-submit:disabled,
+.main-information-student-list-submit:disabled,
+.main-register-info-submit:disabled {
+    background-color: #8db8f9;
+    border-color: #8db8f9;
+}
+
+.main-information-student-list-employmentID-input,
+.main-information-course-list-employmentID-input {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    background-color: #ececec;
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.main-register-info-submit-span,
+.main-register-info-email-validation,
+.main-register-info-phoneNumber-validation {
+    display: none;
+    color: green;
+}
+
+.main-information-student-list,
+.main-information-course-list {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.main-information-student-list > h3,
+.main-information-course-list > h3 {
+    margin-bottom: 10px;
+}
+
+.main-registerclasses {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+    .main {
+        padding: 50px 25px;
+    }
+}
+@media (max-width: 1020px) {
+    .top {
+        padding: 100px 25px;
+        font-size: 4rem;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-register {
+        margin-bottom: 15px;
+    }
+
+    .main-register-title,
+    .main-information-title {
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
